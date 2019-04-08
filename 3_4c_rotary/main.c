@@ -1,13 +1,13 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	3.4 Interrupts der parallelen Schnittstelle
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  * 	- 8 LEDs an P1.0 bis P1.7
  * 	- Drehencoder
  *    - Gemeinsamer Interrupt-Pin an P2.3

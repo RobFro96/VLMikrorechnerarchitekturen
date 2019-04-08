@@ -1,20 +1,20 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	6.3 I2C
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  *	- MCP23008 mit 4x4-LED-Matrix
  *	  - SCL an P3.2
  *	  - SDA an P3.1
  *
  * Funktion:
  *  - Ansteuern der LED-Matrix
- *  - Modul für LED-Matrix
+ *  - Modul fÃ¼r LED-Matrix
  *  - Taktung der Matrix durch Timer
  */
 
@@ -30,7 +30,7 @@ int main(void) {
 	BCSCTL1 = CALBC1_1MHZ;
 	DCOCTL = CALDCO_1MHZ;
 
-	// Timer A mit regelmäßigen CCR0-Interrupt
+	// Timer A mit regelmÃ¤ÃŸigen CCR0-Interrupt
 	CCR0 = MATRIX_UPDATE_INTERVAL;
 	CCTL0 = CCIE;
 	TACTL = TASSEL_1 + MC_2 + TACLR;

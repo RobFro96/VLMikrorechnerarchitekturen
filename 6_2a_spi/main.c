@@ -1,23 +1,23 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	6.2 SPI
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  *  - MAX7219 mit LED-Matrix an SPI-Schnittstelle
  *    - Vcc   sw   3,3 V
- *    - GND   wß   GND
+ *    - GND   wÃŸ   GND
  *    - DIN   gr   P3.1
  *    - CS    vl   P1.0
  *    - CLK   bl   P3.3
  *
  * Funktion:
  *  - Demonstartion der SPI-Schnittstelle
- *  - Initialisierung des MAX7219 über SPI
+ *  - Initialisierung des MAX7219 Ã¼ber SPI
  *  - Ausgeben von "Hi!"-Text auf der LED-Matrix
  */
 
@@ -39,7 +39,7 @@ int main(void) {
 	P3SEL |= BIT1 + BIT2 + BIT3;	// MOSI, MISO, CLK-Pins
 
 	UCB0CTL1 |= UCSWRST;	// Soft-Reset des SPI-Moduls
-	UCB0CTL0 = UCCKPH + UCMSB + UCMST + UCSYNC;	// Einstellungen: Clk-Phase, MSB-First, SPI-Master, Synchrone-Übertragung
+	UCB0CTL0 = UCCKPH + UCMSB + UCMST + UCSYNC;	// Einstellungen: Clk-Phase, MSB-First, SPI-Master, Synchrone-Ãœbertragung
 	UCB0BR0 = 1;	// kein Teiler -> 1 MHz Clk
 	UCB0BR1 = 0;
 

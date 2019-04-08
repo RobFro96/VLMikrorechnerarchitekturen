@@ -1,13 +1,13 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	3.2 Ansteuern des LCD-Moduls
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  * 	- LCD des MSP430 Education Systems
  * 	  - DATA4 ... DATA7 an P1.0 ... P1.3
  * 	  - RS an P3.0

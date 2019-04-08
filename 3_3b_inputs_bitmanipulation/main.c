@@ -1,13 +1,13 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
- * 	3.3 Eingänge der parallelen Schnittstelle
+ * 	3.3 EingÃ¤nge der parallelen Schnittstelle
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  * 	- 8 LEDs an P1.0 bis P1.7
  * 	  - P1.0 bis P1.3 werden angeschalten
  * 	- Taster an Port2
@@ -36,7 +36,7 @@ int main(void) {
 			// Taster 1 losgelassen
 			P1OUT &= ~BIT0;
 		} else {
-			// Taster 1 gedrückt
+			// Taster 1 gedrÃ¼ckt
 			P1OUT |= BIT0;
 		}
 
@@ -44,7 +44,7 @@ int main(void) {
 			// Taster 2 losgelassen
 			P1OUT &= ~BIT1;
 		} else {
-			// Taster 2 gedrückt
+			// Taster 2 gedrÃ¼ckt
 			P1OUT |= BIT1;
 		}
 
@@ -52,7 +52,7 @@ int main(void) {
 			// Taster 3 losgelassen
 			P1OUT &= ~BIT2;
 		} else {
-			// Taster 3 gedrückt
+			// Taster 3 gedrÃ¼ckt
 			P1OUT |= BIT2;
 		}
 
@@ -60,7 +60,7 @@ int main(void) {
 			// Taster 4 losgelassen
 			P1OUT &= ~BIT3;
 		} else {
-			// Taster 4 gedrückt
+			// Taster 4 gedrÃ¼ckt
 			P1OUT |= BIT3;
 		}
 	}

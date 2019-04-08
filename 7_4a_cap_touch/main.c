@@ -1,19 +1,19 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	7. Analog-Digital-Umsetzer
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  *	- LED an P1.0
- *	- Freier Pin P4.3 mit 220k-Widerstand zur Berührungsfläche
+ *	- Freier Pin P4.3 mit 220k-Widerstand zur BerÃ¼hrungsflÃ¤che
  *
  * Funktion:
  *  - Demonstration eines kapazitiven Touchsensor ohne Capacitive-Sensing-Modul
- *  - LED an P1.0 wird angeschaltet, wenn eine Berührung detektiert wurde
+ *  - LED an P1.0 wird angeschaltet, wenn eine BerÃ¼hrung detektiert wurde
  */
 
 #include <msp430.h>

@@ -1,13 +1,13 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	4.2 Erzeugen von Rechtecksignalen
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  * 	- LEDs an P1.1, P1.2, P1.3
  * 	- 32,768 kHz-Quarz an XIN, XOUT
  *

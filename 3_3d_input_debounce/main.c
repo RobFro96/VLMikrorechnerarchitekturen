@@ -1,19 +1,19 @@
 /**
  * @author 	Robert Fromm
- * @date	M‰rz 2019
- * @brief	Beispielprogramm f¸r die Vorlesung Mikrorechnerarchitektur
- * 			Fakult‰t EIT, HTWK Leipzig
+ * @date	M√§rz 2019
+ * @brief	Beispielprogramm f√ºr die Vorlesung Mikrorechnerarchitektur
+ * 			Fakult√§t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
- * 	3.3 Eing‰nge der parallelen Schnittstelle
+ * 	3.3 Eing√§nge der parallelen Schnittstelle
  *
- * Benˆtigte Hardware:
+ * Ben√∂tigte Hardware:
  * 	- 8 LEDs an P1.0 bis P1.7
  * 	- Taster an P2.0
  *
  * Funktion:
- * 	- Beim Dr¸cken des Tasters an P2.0 wird Register P1OUT hochgez‰hlt
- * 	- Wert des Z‰hlers in Bin‰r an den LEDs ablesbar
+ * 	- Beim Dr√ºcken des Tasters an P2.0 wird Register P1OUT hochgez√§hlt
+ * 	- Wert des Z√§hlers in Bin√§r an den LEDs ablesbar
  */
 
 #include <msp430.h>

@@ -1,13 +1,13 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
- * 	3.1 Ausgänge der parallelen Schnittstelle
+ * 	3.1 AusgÃ¤nge der parallelen Schnittstelle
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  * 	- 8 LEDs an P1.0 bis P1.7
  *
  * Funktion:
@@ -25,15 +25,15 @@ const uint8_t pattern_length = 7;
 int main(void) {
 	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
 
-	P1DIR = 0xFF;	// Alle Pin als Ausgänge
-	P1OUT = 0x00;   // Alle Ausgänge auf Low
+	P1DIR = 0xFF;	// Alle Pin als AusgÃ¤nge
+	P1OUT = 0x00;   // Alle AusgÃ¤nge auf Low
 
 	uint8_t pattern_id = 0;
 	while (1) {
 		// Muster ausgeben
 		P1OUT = patterns[pattern_id];
 
-		// Weiterzählen, ggf. zurücksetzen
+		// WeiterzÃ¤hlen, ggf. zurÃ¼cksetzen
 		pattern_id++;
 		if (pattern_id >= pattern_length) {
 			pattern_id = 0;

@@ -1,19 +1,19 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
- * 	3.1 Ausgänge der parallelen Schnittstelle
+ * 	3.1 AusgÃ¤nge der parallelen Schnittstelle
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  * 	- 8 LEDs an P1.0 bis P1.7
  *
  * Funktion:
  *  - Erstes Programm
  * 	- Zwei verschiedene Muster werden abwechselnd an den LEDs ausgegeben
- * 	- Programm muss im Debugger ausgeführt werden, da Muster sich sehr schnell abwechseln
+ * 	- Programm muss im Debugger ausgefÃ¼hrt werden, da Muster sich sehr schnell abwechseln
  */
 
 #include <msp430.h>

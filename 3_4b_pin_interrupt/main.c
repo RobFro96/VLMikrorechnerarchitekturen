@@ -1,13 +1,13 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	3.4 Interrupts der parallelen Schnittstelle
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  * 	- 8 LEDs an P1.0 bis P1.7
  * 	- Taster an Port2
  * 	  - Taster 1: P2.0
@@ -20,7 +20,7 @@
  * 	- Verschiedenen Schaltern werden verschiedene Funktionen zugeordnet
  * 	  - Taster 1: Inkrementieren
   	  - Taster 2: Dekrementieren
-  	  - Taster 3: Zurücksetzen auf 0
+  	  - Taster 3: ZurÃ¼cksetzen auf 0
   	  - Taster 4: Setzen auf 0xAA
  */
 

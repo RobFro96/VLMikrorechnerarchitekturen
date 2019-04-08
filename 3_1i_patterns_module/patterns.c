@@ -1,4 +1,4 @@
-// Benˆtige Bibliotheken
+// Ben√∂tige Bibliotheken
 #include <msp430.h>
 #include <stdint.h>
 
@@ -18,8 +18,8 @@ static void set_output(uint8_t pattern);
 // Globale Funktionen
 
 void patterns_init() {
-	P1DIR = 0xFF;	// Alle Pin als Ausg‰nge
-	P1OUT = 0x00;   // Alle Ausg‰nge auf Low
+	P1DIR = 0xFF;	// Alle Pin als Ausg√§nge
+	P1OUT = 0x00;   // Alle Ausg√§nge auf Low
 
 	pattern_pointer = patterns;
 }

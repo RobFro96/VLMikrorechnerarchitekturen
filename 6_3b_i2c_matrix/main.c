@@ -1,13 +1,13 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	6.3 I2C
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  *	- MCP23008 mit 4x4-LED-Matrix
  *	  - SCL an P3.2
  *	  - SDA an P3.1
@@ -66,7 +66,7 @@ void matrix_mcp_write(uint8_t reg, uint8_t data) {
 	while (UCB0STAT & UCBBUSY)
 		;
 
-	// Puffer füllen
+	// Puffer fÃ¼llen
 	i2c_data[0] = reg;
 	i2c_data[1] = data;
 	i2c_counter = 0;
@@ -80,7 +80,7 @@ void matrix_mcp_write(uint8_t reg, uint8_t data) {
 #pragma vector=USCIAB0TX_VECTOR
 __interrupt void USCIAB0TX_ISR(void) {
 	if (i2c_counter < 2) {
-		// Nächtes Byte senden
+		// NÃ¤chtes Byte senden
 		UCB0TXBUF = i2c_data[i2c_counter];
 		i2c_counter++;
 	} else {

@@ -1,13 +1,13 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	5.2 Watchdog Timer
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  * 	- LED an P1.0
  * 	- Taster an P2.0
  * 	- 32,768 kHz-Quarz an XIN, XOUT
@@ -15,8 +15,8 @@
  * Funktion:
  *  - Funktion des Watchdog-Timers im Watchdog-Modus
  *  - LED blinkt beim Programmstart
- *  - Watchdog-Timer löst nach 1 sec ein Reset aus
- *  - Watchdog-Timer wird zurückgesetzt, wenn Taster an P2.0 gedrückt wird
+ *  - Watchdog-Timer lÃ¶st nach 1 sec ein Reset aus
+ *  - Watchdog-Timer wird zurÃ¼ckgesetzt, wenn Taster an P2.0 gedrÃ¼ckt wird
  */
 
 #include <msp430.h>

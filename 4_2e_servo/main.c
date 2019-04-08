@@ -1,13 +1,13 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	4.2 Erzeugen von Rechtecksignalen
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  * 	- Taster an P2.0, P2.1, P2.2, P2.5
  * 	- Servo-Motor
  * 	  - Vcc (rot) an 5 V
@@ -16,7 +16,7 @@
  * 	- 32,768 kHz-Quarz an XIN, XOUT
  *
  * Funktion:
- *  - Ausgabe des PWM-Signals für den Servo-Motor an P1.3
+ *  - Ausgabe des PWM-Signals fÃ¼r den Servo-Motor an P1.3
  *  - Tasten 1 und 2 um schrittweise nach rechts oder links zu drehen
  *  - Tasten 3 und 4 um komplett nach recht oder links zu drehen
  */

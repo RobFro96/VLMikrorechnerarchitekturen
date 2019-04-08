@@ -1,20 +1,20 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	6.3 I2C
  *
- * Benötigte Hardware:
+ * BenÃ¶tigte Hardware:
  *	- MCP23008 mit 4x4-LED-Matrix
  *	  - SCL an P3.2
  *	  - SDA an P3.1
  *
  * Funktion:
  *  - Ansteuern der LED-Matrix
- *  - Modul für LED-Matrix
+ *  - Modul fÃ¼r LED-Matrix
  *  - Taktung der Matrix durch Timer
  */
 
@@ -35,7 +35,7 @@ static uint8_t current_row;			 //!> Aktueller Index von matrix_buffer
 /**
  * Initialisierung des I2C-Moduls
  * Initialsierung des MCP23008
- * Löschen des Matrix-Puffers
+ * LÃ¶schen des Matrix-Puffers
  */
 void matrix_init() {
 	P3SEL |= BIT1 + BIT2;	// I2C-Pins
@@ -48,7 +48,7 @@ void matrix_init() {
 	UCB0CTL1 = UCSSEL_2;
 	IE2 |= UCB0TXIE;
 
-	// Löschen der Anzeige
+	// LÃ¶schen der Anzeige
 	for (uint8_t row = 0; row < 4; row++) {
 		matrix_write_row(row, 0);
 	}
@@ -68,7 +68,7 @@ void matrix_mcp_write(uint8_t reg, uint8_t data) {
 	while (UCB0STAT & UCBBUSY)
 		;
 
-	// Puffer füllen
+	// Puffer fÃ¼llen
 	i2c_data[0] = reg;
 	i2c_data[1] = data;
 	i2c_counter = 0;
@@ -89,7 +89,7 @@ void matrix_write_row(uint8_t row, uint8_t data) {
 }
 
 /**
- * Funktion, die durch eine Timer aufgerufen werden muss, um das Multiplexing der Matrix druchzuführen
+ * Funktion, die durch eine Timer aufgerufen werden muss, um das Multiplexing der Matrix druchzufÃ¼hren
  */
 void matrix_update() {
 	matrix_mcp_write(MCP_GPIO, matrix_buffer[current_row]);
@@ -102,7 +102,7 @@ void matrix_update() {
 #pragma vector=USCIAB0TX_VECTOR
 __interrupt void USCIAB0TX_ISR(void) {
 	if (i2c_counter < 2) {
-		// Nächtes Byte senden
+		// NÃ¤chtes Byte senden
 		UCB0TXBUF = i2c_data[i2c_counter];
 		i2c_counter++;
 	} else {

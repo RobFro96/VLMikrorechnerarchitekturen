@@ -1,19 +1,19 @@
 /**
  * @author 	Robert Fromm
- * @date	M‰rz 2019
- * @brief	Beispielprogramm f¸r die Vorlesung Mikrorechnerarchitektur
- * 			Fakult‰t EIT, HTWK Leipzig
+ * @date	M√§rz 2019
+ * @brief	Beispielprogramm f√ºr die Vorlesung Mikrorechnerarchitektur
+ * 			Fakult√§t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
- * 	4.1 Erzeugen regelm‰ﬂiger Interruptsignale
+ * 	4.1 Erzeugen regelm√§√üiger Interruptsignale
  *
- * Benˆtigte Hardware:
+ * Ben√∂tigte Hardware:
  * 	- 8 LEDs an P1.0 bis P1.7
  * 	- 32,768 kHz-Quarz an XIN, XOUT
  *
  * Funktion:
  *  - Togglen der LED durch TimerA-CCR0-Interrupt
- *  - Anpassen der Interrupt-Periode auf 1 sec durch Ver‰ndern des CCR0-Wertes
+ *  - Anpassen der Interrupt-Periode auf 1 sec durch Ver√§ndern des CCR0-Wertes
  */
 
 #include <msp430.h>

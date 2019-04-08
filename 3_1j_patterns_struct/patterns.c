@@ -16,8 +16,8 @@ static const pattern_t *pattern_pointer;
 static void set_output(uint8_t pattern);
 
 void patterns_init() {
-	P1DIR = 0xFF;	// Alle Pin als Ausg‰nge
-	P1OUT = 0x00;   // Alle Ausg‰nge auf Low
+	P1DIR = 0xFF;	// Alle Pin als Ausg√§nge
+	P1OUT = 0x00;   // Alle Ausg√§nge auf Low
 
 	pattern_pointer = patterns;
 }

@@ -1,14 +1,14 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	4.2 Erzeugen von Rechtecksignalen
  *
- * Benötigte Hardware:
- * 	- Tongeber mit Verstärker an P2.4
+ * BenÃ¶tigte Hardware:
+ * 	- Tongeber mit VerstÃ¤rker an P2.4
  * 	- Taster an P2.0
  * 	- 32,768 kHz-Quarz an XIN, XOUT
  *

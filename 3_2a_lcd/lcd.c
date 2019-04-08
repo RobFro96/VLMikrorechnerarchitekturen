@@ -1,8 +1,8 @@
 /**
  * @author 	Robert Fromm
- * @date	März 2019
- * @brief	Beispielprogramm für die Vorlesung Mikrorechnerarchitektur
- * 			Fakultät EIT, HTWK Leipzig
+ * @date	MÃ¤rz 2019
+ * @brief	Beispielprogramm fÃ¼r die Vorlesung Mikrorechnerarchitektur
+ * 			FakultÃ¤t EIT, HTWK Leipzig
  *
  * Aus Kapitel:
  * 	3.2 Ansteuern des LCD-Moduls
@@ -34,16 +34,16 @@ void lcd_init() {
 	pin_mode();
 
 	__delay_cycles(15000);
-	send_8bit(0x3, LCD_COMMAND);	// Initialisierungsschlüssel
+	send_8bit(0x3, LCD_COMMAND);	// InitialisierungsschlÃ¼ssel
 	__delay_cycles(41000);
-	send_8bit(0x3, LCD_COMMAND);	// Initialisierungsschlüssel
+	send_8bit(0x3, LCD_COMMAND);	// InitialisierungsschlÃ¼ssel
 	__delay_cycles(100);
-	send_8bit(0x3, LCD_COMMAND);	// Initialisierungsschlüssel
+	send_8bit(0x3, LCD_COMMAND);	// InitialisierungsschlÃ¼ssel
 	send_8bit(0x2, LCD_COMMAND);    // Function set: 4Bit
 
 	send_4bit(0x28, LCD_COMMAND);	// Function set: 4bit, 2Line
 	send_4bit(0x0C, LCD_COMMAND);	// Display on/off: on, keine Cursor
-	send_4bit(0x06, LCD_COMMAND);// Entry mode set: Links nach rechts, überschreiben
+	send_4bit(0x06, LCD_COMMAND);// Entry mode set: Links nach rechts, Ã¼berschreiben
 	send_4bit(0x01, LCD_COMMAND);	// Clear Display
 
 	__delay_cycles(40000);
@@ -87,7 +87,7 @@ void lcd_write(const char *str) {
 	}
 }
 
-// Funktionen zur Datenübertragung
+// Funktionen zur DatenÃ¼bertragung
 
 /**
  * Senden eines Bytes an das LCD mit Hilfe der 8-Bit-Kommunikation
@@ -126,7 +126,7 @@ static void send_4bit(uint8_t data, lcd_command_t type) {
 // Pin-Funktionen
 
 /**
- * Setzen der Datenflussrichtung aller Pins der MSP430, die zur Steuerung des LCDs benötigt werden
+ * Setzen der Datenflussrichtung aller Pins der MSP430, die zur Steuerung des LCDs benÃ¶tigt werden
  */
 static void pin_mode() {
 	// Datenpins als Ausgang
