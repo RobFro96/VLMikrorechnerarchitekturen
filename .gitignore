@@ -1,0 +1,9 @@
+/.metadata/
+.jxbrowser-data
+RemoteSystemsTempFiles
+Debug/
+Release
+.config/
+.launches/
+.xdchelp
+targetConfigs/
